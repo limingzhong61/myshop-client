@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <router-view></router-view>
+    <FooterGuide v-show="$route.meta.showFooter"></FooterGuide>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import FooterGuide from "./components/FooterGuide/FooterGuide.vue";
+import { reqFoodCategorys } from "./api/index.js";
+import axios from "axios";
 export default {
-  name: 'app',
+  created() {
+    // 异步获取 address
+    this.$store.dispatch("getShopInfo");
+    // axios.get("http://localhost:4000/index_category").then(res => {
+    //   console.log(res);
+    // }).catch(err =>{
+    //   console.log(err)
+    // });
+  },
+  // async mounted(){
+  //  const result = await reqFoodCategorys()
+  //  console.log(result)
+  // },
   components: {
-    HelloWorld
+    FooterGuide
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="stylus" rel="stylesheet/stylus">
+.app {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
 }
 </style>
