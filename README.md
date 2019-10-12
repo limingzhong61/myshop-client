@@ -1,6 +1,7 @@
 # myshop-client
 
-Vue项目-硅谷外卖（此项目还未和后端交互。纯前端效果，能直接在打包后的dist访问）[Image text](https://github.com/Li-MingZhong/myshop-client/blob/master/show-imgs/791CFA89.png)）
+Vue项目-硅谷外卖（此项目还未和后端交互。纯前端效果，能直接在打包后的dist访问）
+
 观看哔哩哔哩视频所写:https://www.bilibili.com/video/av49099807/?p=76&t=284
 ## ![纯前端版](https://github.com/Li-MingZhong/myshop-client/releases/tag/v1.0)
 Vue项目-硅谷外卖。此版本还未后端交互，纯前端效果
