@@ -12,7 +12,7 @@ import axios from "axios";
 export default {
   created() {
     // 异步获取 address
-    this.$store.dispatch("getShopInfo");
+    // this.$store.dispatch("getShopInfo");
     // axios.get("http://localhost:4000/index_category").then(res => {
     //   console.log(res);
     // }).catch(err =>{
