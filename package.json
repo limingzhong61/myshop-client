@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-service": "^3.11.0",
+    "@vue/cli-service": "^5.0.8",
     "http-proxy-middleware": "^0.20.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
